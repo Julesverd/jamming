@@ -3,7 +3,11 @@ import './App.css';
 
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div>
@@ -12,7 +16,7 @@ class App extends React.Component {
     <SearchBar />
     <div class="App-playlist">
       <SearchResults />
-      {/* <Playlist /> */}
+      <Playlist />
     </div>
   </div>
 </div>
